@@ -11,3 +11,11 @@ Kullanılan Veritabanı : Microsoft SQL Server
 Kullanılan ORM Aracı : Entity Framework
 Hazırlanan Api Tipi : Rest Api
 
+## Notlar
+- Uygulama Geliştirilme Aşamasındadır.Geliştirilme Durumuna Göre Güncellenmektedir.
+
+## Güncelleme Notları
+### Development.0.1
+1 Mart 2019 Tarihinde Eklendi. </br>
+Uygulamanın Entity,DataAccess Ve Business Katmanları Tamamlandı. </br>
+UI Katmanı Oluşturuldu Ve Deneme Amaçlı Belediyeler Apisi Oluşturularak Çalışıp Çalışmadığı Test Edildi. </br>
