@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace BeyazMasa.WebAppUI.Controllers.Site
+{
+    public class SistemBelediyelerController : Controller
+    {
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+    }
+}

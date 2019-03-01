@@ -1,0 +1,14 @@
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\BeyazMasa.DataAccess.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\BeyazMasa.DataAccess.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\BeyazMasa.Entity.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\BeyazMasa.Entity.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\obj\Debug\BeyazMasa.DataAccess.csprojAssemblyReference.cache
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\obj\Debug\BeyazMasa.DataAccess.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\obj\Debug\BeyazMasa.DataAccess.csproj.CopyComplete
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\obj\Debug\BeyazMasa.DataAccess.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\obj\Debug\BeyazMasa.DataAccess.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\BeyazMasa.DataAccess.dll.config
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\EntityFramework.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\EntityFramework.xml
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.DataAccess\bin\Debug\EntityFramework.SqlServer.xml

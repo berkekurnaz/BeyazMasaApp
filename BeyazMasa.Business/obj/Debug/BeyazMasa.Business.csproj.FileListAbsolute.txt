@@ -1,0 +1,17 @@
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\obj\Debug\BeyazMasa.Business.csprojAssemblyReference.cache
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\obj\Debug\BeyazMasa.Business.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.Business.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.Business.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.DataAccess.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.Entity.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\EntityFramework.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.DataAccess.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.DataAccess.dll.config
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.Entity.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\EntityFramework.xml
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\obj\Debug\BeyazMasa.Business.csproj.CopyComplete
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\obj\Debug\BeyazMasa.Business.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\obj\Debug\BeyazMasa.Business.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\BeyazMasa.Business.dll.config
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Business\bin\Debug\EntityFramework.SqlServer.xml

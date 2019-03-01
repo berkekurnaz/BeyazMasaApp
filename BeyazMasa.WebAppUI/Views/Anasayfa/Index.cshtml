@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul id="belediyeler">
+    <li>fewe</li>
+</ul>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4 text-center">
+        <h4>Yeni Kayıt Ekleme</h4>
+        <hr />
+        <form>
+
+            <div class="form-group">
+                <label>Belediye Adı</label>
+                <center><input type="text" class="form-control" id="BelediyeAd" placeholder="Belediye Adı..."></center>
+            </div>
+            <div class="form-group">
+                <label>Belediye Açıklama</label>
+                <center><input type="text" class="form-control" id="BelediyeAciklama" placeholder="Belediye Aciklama..."></center>
+            </div>
+            <div class="form-group">
+                <label>Belediye Şehir</label>
+                <center><input type="text" class="form-control" id="BelediyeSehir" placeholder="Belediye Şehri..."></center>
+            </div>
+        </form>
+        <button id="btnEkle" type="button" class="btn btn-primary">Yeni Belediye Ekle</button>
+    </div>
+
+    <div class="col-md-4 text-center">
+        <h4>Bir Kaydı Güncelleme</h4>
+        <hr />
+
+    </div>
+
+    <div class="col-md-4 text-center">
+        <h4>Bir Kayıt Silme</h4>
+        <hr />
+        swsw
+    </div>
+</div>
+
+<br />
+
+
+<script>
+
+    function YukleBelediye() {
+        var ul = $("#belediyeler");
+        ul.empty();
+
+        $.ajax({
+            method: "GET",
+            url: "../api/Belediyeler",
+        }).done(function (response) {
+            for (var i = 0; i < response.length; i++) {
+                var bel = response[i];
+                var li = $("<li class='list-group-item'>" + bel.BelediyeAd + "</li>");
+                ul.append(li);
+            }
+        }).fail(function () {
+            alert("HATA");
+        });
+    }
+
+    function EkleBelediye() {
+        var BelediyeAd = $("#BelediyeAd").val();
+        var BelediyeAciklama = $("#BelediyeAciklama").val();
+        var BelediyeSehir = $("#BelediyeSehir").val();
+
+
+        var belediye = {
+            "BelediyeAd": BelediyeAd,
+            "BelediyeAciklama": BelediyeAciklama,
+            "BelediyeSehir": BelediyeSehir
+        };
+
+        $.ajax({
+            method: "POST",
+            url: "../api/Belediyeler",
+            type: "json",
+            data: belediye
+        }).done(function (response) {
+            YukleBelediye();
+        }).fail(function () {
+            alert("HATA");
+        });
+    }
+
+    $(function () {
+        YukleBelediye();
+        $("#btnEkle").click(EkleBelediye);
+    });
+
+</script>
