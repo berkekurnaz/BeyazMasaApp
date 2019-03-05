@@ -1,0 +1,65 @@
+﻿@model BeyazMasa.Entity.Concrete.Vatandaslar
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Vatandaşlar</a></li>
+        <li class="active">Ekle</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Yeni Vatandaş Ekleme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="sub-title">İsim</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasIsim" name="VatandasIsim" placeholder="Vatandaşın İsmini Buraya Giriniz...">
+                        </div>
+                        <div class="sub-title">Soyisim</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasSoyad" name="VatandasSoyad" placeholder="Vatandaşın Soyadını Buraya Giriniz...">
+                        </div>
+                        <div class="sub-title">TC Kimlik Numarası</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasTc" name="VatandasTc" placeholder="Vatandaşın TC Kimlik Numarasını Buraya Giriniz...">
+                        </div>
+                        <div class="sub-title">Kullanıcı Adı</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasKullaniciAdi" name="VatandasKullaniciAdi" placeholder="Vatandaşın Kullanıcı Adını Buraya Giriniz...">
+                        </div>
+                        <div class="sub-title">Şifre</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasSifre" name="VatandasSifre" placeholder="Vatandaşın Şifresini Buraya Giriniz...">
+                        </div>
+                        <br />
+                        <center><button type="submit" class="btn btn-info"><i class="fa fa-plus" aria-hidden="true"></i> Yeni Vatandaş Ekle</button></center>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+

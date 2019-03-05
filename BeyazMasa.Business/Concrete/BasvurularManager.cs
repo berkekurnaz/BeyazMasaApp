@@ -44,5 +44,13 @@ namespace BeyazMasa.Business.Concrete
         {
             return _basvurularDal.Get(x => x.Id == id);
         }
+
+        /* Id Degerine Göre Basvurunun Durumunu Guncelleme */
+        public void UpdateDurum(int basvuruId, string durum)
+        {
+            Basvurular basvuru = _basvurularDal.Get(x => x.Id == basvuruId);
+            basvuru.Durum = durum;
+            _basvurularDal.Update(basvuru);
+        }
     }
 }

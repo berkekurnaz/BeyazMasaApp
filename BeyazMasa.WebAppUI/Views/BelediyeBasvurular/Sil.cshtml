@@ -1,0 +1,72 @@
+﻿@model BeyazMasa.Entity.Concrete.Basvurular
+@{
+    ViewBag.Title = "Sil";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Başvurular</a></li>
+        <li class="active">Sil</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Başvuru Silme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    @using (Html.BeginForm())
+                    {
+
+                        <div class="sub-title">Gönderen Vatandaş</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasId" name="VatandasId" value="@Model.VatandasId" readonly>
+                        </div>
+                        <div class="sub-title">Gönderilen Birim</div>
+                        <div>
+                            <input type="text" class="form-control" id="BirimId" name="BirimId" value="@Model.BirimId" readonly>
+                        </div>
+                        <div class="sub-title">Gönderim Tarih</div>
+                        <div>
+                            <input type="text" class="form-control" id="Tarih" name="Tarih" value="@Model.Tarih" readonly>
+                        </div>
+                        <div class="sub-title">Başvuru Durumu</div>
+                        <div>
+                            <input type="text" class="form-control" id="Durum" name="Durum" value="@Model.Durum" readonly>
+                        </div>
+                        <div class="sub-title">Başvuru Başlığı</div>
+                        <div>
+                            <input type="text" class="form-control" id="Baslik" name="Baslik" value="@Model.Baslik" readonly>
+                        </div>
+                        <div class="sub-title">Başvuru İçeriği</div>
+                        <div>
+                            <textarea class="form-control" rows="5" id="Icerik" name="Icerik" readonly>@Model.Icerik</textarea>
+                        </div>
+                            <div class="sub-title">Başvuru Durumu</div>
+                            <div>
+                                <input type="text" class="form-control" id="Dosya" name="Dosya" value="@Model.Dosya" readonly>
+                            </div>
+                        <br />
+                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Sil</button>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

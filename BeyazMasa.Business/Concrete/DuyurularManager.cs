@@ -30,7 +30,7 @@ namespace BeyazMasa.Business.Concrete
         /* Bir Duyuruyu Silme */
         public void Delete(Duyurular duyuru)
         {
-            _duyurularDal.Add(duyuru);
+            _duyurularDal.Delete(duyuru);
         }
 
         /* Butun Duyurulari Listeleme */

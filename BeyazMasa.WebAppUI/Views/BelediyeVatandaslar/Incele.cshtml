@@ -1,0 +1,63 @@
+﻿@model BeyazMasa.Entity.Concrete.Vatandaslar
+@{
+    ViewBag.Title = "Incele";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Vatandaşlar</a></li>
+        <li class="active">İncele</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Vatandaş İnceleme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                        <div class="sub-title">İsim</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasIsim" name="VatandasIsim" value="@Model.VatandasIsim" readonly>
+                        </div>
+                        <div class="sub-title">Soyisim</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasSoyad" name="VatandasSoyad" value="@Model.VatandasSoyad" readonly>
+                        </div>
+                        <div class="sub-title">TC Kimlik Numarası</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasTc" name="VatandasTc" value="@Model.VatandasTc" readonly>
+                        </div>
+                        <div class="sub-title">Kullanıcı Adı</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasKullaniciAdi" name="VatandasKullaniciAdi" value="@Model.VatandasKullaniciAdi" readonly>
+                        </div>
+                        <div class="sub-title">Şifre</div>
+                        <div>
+                            <input type="text" class="form-control" id="VatandasSifre" name="VatandasSifre" value="@Model.VatandasSifre" readonly>
+                        </div>
+                        <br />
+                        <center>
+                            <a href="/BelediyeVatandaslar/Index" class="btn btn-info"><i class="fa fa-backward" aria-hidden="true"></i> Geriye Dön</a>
+                            <a href="/BelediyeVatandaslar/Guncelle/@Model.Id" class="btn btn-success"><i class="fa fa-file-text" aria-hidden="true"></i> Güncelle</a>
+                            <a href="/BelediyeVatandaslar/Sil/@Model.Id" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                        </center>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

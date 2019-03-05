@@ -162,11 +162,18 @@
     <Compile Include="Controllers\Api\ABasvurularController.cs" />
     <Compile Include="Controllers\Api\ABelediyelerController.cs" />
     <Compile Include="Controllers\Site\AnasayfaController.cs" />
+    <Compile Include="Controllers\Site\BelediyeBasvurularController.cs" />
+    <Compile Include="Controllers\Site\BelediyeBirimlerController.cs" />
+    <Compile Include="Controllers\Site\BelediyeBirimYoneticilerController.cs" />
+    <Compile Include="Controllers\Site\BelediyeController.cs" />
+    <Compile Include="Controllers\Site\BelediyeVatandaslarController.cs" />
+    <Compile Include="Controllers\Site\BelediyeYoneticilerController.cs" />
     <Compile Include="Controllers\Site\SistemBelediyelerController.cs" />
     <Compile Include="Controllers\Site\SistemBirimlerController.cs" />
     <Compile Include="Controllers\Site\SistemController.cs" />
     <Compile Include="Controllers\Site\SistemDuyurularController.cs" />
     <Compile Include="Controllers\Site\SistemIletisimController.cs" />
+    <Compile Include="Controllers\Site\SistemYoneticilerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +196,54 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Views\Shared\_LayoutSistem.cshtml" />
+    <Content Include="Views\SistemBelediyeler\Index.cshtml" />
+    <Content Include="Views\SistemBelediyeler\Ekle.cshtml" />
+    <Content Include="Views\SistemBelediyeler\Guncelle.cshtml" />
+    <Content Include="Views\SistemBelediyeler\Sil.cshtml" />
+    <Content Include="Views\Sistem\Index.cshtml" />
+    <Content Include="Views\SistemDuyurular\Index.cshtml" />
+    <Content Include="Views\SistemDuyurular\Ekle.cshtml" />
+    <Content Include="Views\SistemDuyurular\Guncelle.cshtml" />
+    <Content Include="Views\SistemDuyurular\Sil.cshtml" />
+    <Content Include="Views\SistemIletisim\Index.cshtml" />
+    <Content Include="Views\SistemIletisim\Guncelle.cshtml" />
+    <Content Include="Views\SistemIletisim\Sil.cshtml" />
+    <Content Include="Views\SistemYoneticiler\Index.cshtml" />
+    <Content Include="Views\SistemYoneticiler\Ekle.cshtml" />
+    <Content Include="Views\SistemYoneticiler\Guncelle.cshtml" />
+    <Content Include="Views\SistemYoneticiler\Sil.cshtml" />
+    <Content Include="Views\SistemBirimler\Index.cshtml" />
+    <Content Include="Views\SistemBirimler\Ekle.cshtml" />
+    <Content Include="Views\SistemBirimler\Guncelle.cshtml" />
+    <Content Include="Views\SistemBirimler\Sil.cshtml" />
+    <Content Include="Views\Sistem\Giris.cshtml" />
+    <Content Include="Views\Shared\_LayoutBelediye.cshtml" />
+    <Content Include="Views\Belediye\Index.cshtml" />
+    <Content Include="Views\Belediye\Duyurular.cshtml" />
+    <Content Include="Views\Belediye\DuyuruDetay.cshtml" />
+    <Content Include="Views\Belediye\Giris.cshtml" />
+    <Content Include="Views\BelediyeBirimler\Index.cshtml" />
+    <Content Include="Views\BelediyeBirimler\Ekle.cshtml" />
+    <Content Include="Views\BelediyeBirimler\Guncelle.cshtml" />
+    <Content Include="Views\BelediyeBirimler\Sil.cshtml" />
+    <Content Include="Views\BelediyeBirimYoneticiler\Index.cshtml" />
+    <Content Include="Views\BelediyeBirimYoneticiler\Ekle.cshtml" />
+    <Content Include="Views\BelediyeBirimYoneticiler\Guncelle.cshtml" />
+    <Content Include="Views\BelediyeBirimYoneticiler\Sil.cshtml" />
+    <Content Include="Views\BelediyeYoneticiler\Index.cshtml" />
+    <Content Include="Views\BelediyeYoneticiler\Ekle.cshtml" />
+    <Content Include="Views\BelediyeYoneticiler\Guncelle.cshtml" />
+    <Content Include="Views\BelediyeYoneticiler\Sil.cshtml" />
+    <Content Include="Views\BelediyeVatandaslar\Index.cshtml" />
+    <Content Include="Views\BelediyeVatandaslar\Ekle.cshtml" />
+    <Content Include="Views\BelediyeVatandaslar\Guncelle.cshtml" />
+    <Content Include="Views\BelediyeVatandaslar\Sil.cshtml" />
+    <Content Include="Views\BelediyeVatandaslar\Incele.cshtml" />
+    <Content Include="Views\BelediyeBasvurular\Index.cshtml" />
+    <Content Include="Views\BelediyeBasvurular\Incele.cshtml" />
+    <Content Include="Views\BelediyeBasvurular\Guncelle.cshtml" />
+    <Content Include="Views\BelediyeBasvurular\Sil.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -199,11 +254,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\SistemBelediyeler\" />
-    <Folder Include="Views\SistemBirimler\" />
-    <Folder Include="Views\SistemDuyurular\" />
-    <Folder Include="Views\SistemIletisim\" />
-    <Folder Include="Views\Sistem\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeyazMasa.Business\BeyazMasa.Business.csproj">

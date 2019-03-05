@@ -36,13 +36,13 @@ namespace BeyazMasa.Business.Concrete
         /* Belediyedeki Butun Birim Yoneticilerini Listeleme */
         public List<BirimYoneticiler> GetBirimYoneticiByBelediye(int belediyeId)
         {
-            return _birimYoneticilerDal.GetAll(x => x.Id == belediyeId);
+            return _birimYoneticilerDal.GetAll(x => x.BelediyeId == belediyeId).ToList();
         }
 
         /* Belediyedeki Bir Birimdeki Butun Yoneticileri Listeleme */
         public List<BirimYoneticiler> GetBirimYoneticiByBelediye(int belediyeId, int birimId)
         {
-            return _birimYoneticilerDal.GetAll(x => x.Id == belediyeId && x.BirimId == birimId );
+            return _birimYoneticilerDal.GetAll(x => x.BelediyeId == belediyeId && x.BirimId == birimId );
         }
 
         /* Id Degerine Göre Birim Yoneticisi Bulma */

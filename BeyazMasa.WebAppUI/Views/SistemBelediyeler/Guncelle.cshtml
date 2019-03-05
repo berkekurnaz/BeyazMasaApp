@@ -1,0 +1,54 @@
+﻿@model BeyazMasa.Entity.Concrete.Belediyeler
+@{
+    ViewBag.Title = "Guncelle";
+    Layout = "~/Views/Shared/_LayoutSistem.cshtml";
+}
+
+<div class="container-fluid text-center">
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Belediye Güncelleme
+        </div>
+        <div class="card-body">
+
+            @using (Html.BeginForm())
+            {
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Belediye Adı</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fas fa-building"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="BelediyeAd" name="BelediyeAd" value="@Model.BelediyeAd">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Belediye Açıklaması</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fas fa-building"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="BelediyeAciklama" name="BelediyeAciklama" value="@Model.BelediyeAciklama">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Belediye Şehir</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fas fa-building"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="BelediyeSehir" name="BelediyeSehir" value="@Model.BelediyeSehir">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-success"><i class="fas fa-plus-circle"></i> Belediye Güncelle</button>
+            }
+
+        </div>
+        <div class="card-footer small text-muted">Son Güncelleme Tarihi : @DateTime.Now</div>
+
+    </div>
+</div>
+

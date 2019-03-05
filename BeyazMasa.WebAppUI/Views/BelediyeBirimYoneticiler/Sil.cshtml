@@ -1,0 +1,51 @@
+﻿@model BeyazMasa.Entity.Concrete.BirimYoneticiler
+@{
+    ViewBag.Title = "Sil";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Birimler</a></li>
+        <li class="active">Sil</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Birim Yöneticisi Sil</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="sub-title">Birim Yöneticisi Kullanıcı Adı</div>
+                        <div>
+                            <input type="text" class="form-control" id="KullaniciAdi" name="KullaniciAdi" value="@Model.KullaniciAdi" readonly>
+                        </div>
+                        <div class="sub-title">Birim Yöneticisi Şifre</div>
+                        <div>
+                            <input type="text" class="form-control" id="Sifre" name="Sifre" value="@Model.Sifre" readonly>
+                        </div>
+                        <br />
+                        <center><button type="submit" class="btn btn-danger"><i class="fa fa-plus" aria-hidden="true"></i> Birim Yöneticisi Sil</button></center>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

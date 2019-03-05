@@ -21,9 +21,8 @@ namespace BeyazMasa.Business.Concrete
 
 
         /* Yeni Bir Birim Ekleme */
-        public void Add(Birimler birim, int belediyeId)
+        public void Add(Birimler birim)
         {
-            birim.BelediyeId = belediyeId;
             _birimlerDal.Add(birim);
         }
 
@@ -31,6 +30,11 @@ namespace BeyazMasa.Business.Concrete
         public void Delete(Birimler birim)
         {
             _birimlerDal.Delete(birim);
+        }
+
+        public List<Birimler> GetAllBirimler()
+        {
+            return _birimlerDal.GetAll();
         }
 
         /* Belediyeye Ait Butun Birimleri Listeleme */

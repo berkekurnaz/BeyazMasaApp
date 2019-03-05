@@ -44,6 +44,13 @@ namespace BeyazMasa.Business.Concrete
             return _belediyeYoneticilerDal.Get(x => x.Id == id);
         }
 
+        public BelediyeYoneticiler Login(BelediyeYoneticiler belediyeYonetici)
+        {
+            var result = new BelediyeYoneticiler();
+            result = _belediyeYoneticilerDal.Get(x => x.KullaniciAdi == belediyeYonetici.KullaniciAdi && x.Sifre == belediyeYonetici.Sifre);
+            return result;
+        }
+
         /* Bir Belediye Yoneticisi Guncelleme */
         public void Update(BelediyeYoneticiler belediyeYonetici)
         {

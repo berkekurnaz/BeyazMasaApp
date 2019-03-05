@@ -11,6 +11,7 @@ namespace BeyazMasa.Business.Abstract
     {
         List<Basvurular> GetBasvuruByBelediye(int belediyeId); // Belediyeye Ait Olan Başvuruları Listeleme.
         void Add(Basvurular basvuru);
+        void UpdateDurum(int basvuruId, string durum);
         void Delete(Basvurular basvuru);
         Basvurular GetById(int id);
     }

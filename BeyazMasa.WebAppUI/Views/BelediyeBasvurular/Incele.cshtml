@@ -1,0 +1,74 @@
+﻿@model BeyazMasa.Entity.Concrete.Basvurular
+@{
+    ViewBag.Title = "Incele";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Başvurular</a></li>
+        <li class="active">İncele</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Başvuru İnceleme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="sub-title">Gönderen Vatandaş</div>
+                    <div>
+                        <input type="text" class="form-control" value="@Model.VatandasId" readonly>
+                    </div>
+                    <div class="sub-title">Gönderilen Birim</div>
+                    <div>
+                        <input type="text" class="form-control" value="@Model.BirimId" readonly>
+                    </div>
+                    <div class="sub-title">Gönderim Tarih</div>
+                    <div>
+                        <input type="text" class="form-control" value="@Model.Tarih" readonly>
+                    </div>
+                    <div class="sub-title">Başvuru Durumu</div>
+                    <div>
+                        <input type="text" class="form-control" value="@Model.Durum" readonly>
+                    </div>
+                    <div class="sub-title">Başvuru Başlığı</div>
+                    <div>
+                        <input type="text" class="form-control" value="@Model.Baslik" readonly>
+                    </div>
+                    <div class="sub-title">Başvuru İçeriği</div>
+                    <div>
+                        <textarea class="form-control" rows="5" readonly>@Model.Icerik</textarea>
+                    </div>
+                    @if (Model.Dosya != "Null")
+                    {
+                        <div class="sub-title">Başvuru Durumu</div>
+                        <div>
+                            <input type="text" class="form-control" value="@Model.Dosya" readonly>
+                        </div>
+                    }
+                    <br />
+                    <center>
+                        <a href="/BelediyeBasvurular/Index" class="btn btn-info"><i class="fa fa-backward" aria-hidden="true"></i> Geriye Dön</a>
+                        <a href="/BelediyeBasvurular/Guncelle/@Model.Id" class="btn btn-success"><i class="fa fa-file-text" aria-hidden="true"></i> Güncelle</a>
+                        <a href="/BelediyeBasvurular/Sil/@Model.Id" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

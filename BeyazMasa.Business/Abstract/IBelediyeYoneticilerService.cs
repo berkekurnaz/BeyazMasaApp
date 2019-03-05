@@ -14,5 +14,6 @@ namespace BeyazMasa.Business.Abstract
         void Delete(BelediyeYoneticiler belediyeYonetici);
         void Update(BelediyeYoneticiler belediyeYonetici);
         BelediyeYoneticiler GetById(int id);
+        BelediyeYoneticiler Login(BelediyeYoneticiler belediyeYonetici);
     }
 }

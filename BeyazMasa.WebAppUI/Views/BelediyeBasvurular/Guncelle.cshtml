@@ -1,0 +1,77 @@
+﻿@model BeyazMasa.Entity.Concrete.Basvurular
+@{
+    ViewBag.Title = "Guncelle";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Başvurular</a></li>
+        <li class="active">Sil</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Başvuru Silme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    @using (Html.BeginForm())
+                    {
+
+                        <div class="sub-title">Başvuru Durumu</div>
+                        <div>
+                            <select class="form-control" id="basvurununDurumu" name="basvurununDurumu">
+                                <option>Başvuru İletildi</option>
+                                <option>Başvuru İnceleniyor</option>
+                                <option>Başvuru Tamamlandı</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="sub-title">Gönderen Vatandaş</div>
+                                <div>
+                                    <input type="text" class="form-control" id="VatandasId" name="VatandasId" value="@Model.VatandasId" readonly>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sub-title">Gönderilen Birim</div>
+                                <div>
+                                    <input type="text" class="form-control" id="BirimId" name="BirimId" value="@Model.BirimId" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-title">Gönderim Tarih</div>
+                        <div>
+                            <input type="text" class="form-control" id="Tarih" name="Tarih" value="@Model.Tarih" readonly>
+                        </div>
+                        <div class="sub-title">Başvuru Başlığı</div>
+                        <div>
+                            <input type="text" class="form-control" id="Baslik" name="Baslik" value="@Model.Baslik" readonly>
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-success"><i class="fa fa-trash" aria-hidden="true"></i> Güncelle</button>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+

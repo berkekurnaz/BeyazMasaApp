@@ -1,0 +1,50 @@
+﻿@model BeyazMasa.Entity.Concrete.Birimler
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Birimler</a></li>
+        <li class="active">Ekle</li>
+    </ol>
+</div>
+<div id="page-inner">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-title">
+                        <div class="title">Yeni Birim Ekleme</div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="sub-title">Birim Adı</div>
+                        <div>
+                            <input type="text" class="form-control" id="BirimAd" name="BirimAd" placeholder="Birim Adını Buraya Giriniz...">
+                        </div>
+                        <div class="sub-title">Birim Açıklaması</div>
+                        <div>
+                            <input type="text" class="form-control" id="BirimAciklama" name="BirimAciklama" placeholder="Birim Açıklamasını Buraya Giriniz...">
+                        </div>
+                        <br />
+                        <center><button type="submit" class="btn btn-info"><i class="fa fa-plus" aria-hidden="true"></i> Yeni Birim Ekle</button></center>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

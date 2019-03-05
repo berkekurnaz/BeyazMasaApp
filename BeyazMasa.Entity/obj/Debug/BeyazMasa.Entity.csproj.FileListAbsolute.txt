@@ -3,3 +3,4 @@ D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Entity\bin\Debug\Bey
 D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Entity\obj\Debug\BeyazMasa.Entity.csproj.CoreCompileInputs.cache
 D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Entity\obj\Debug\BeyazMasa.Entity.dll
 D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Entity\obj\Debug\BeyazMasa.Entity.pdb
+D:\VisualStudioProjeler\2019Projeler\BeyazMasaApp\BeyazMasa.Entity\obj\Debug\BeyazMasa.Entity.csprojAssemblyReference.cache

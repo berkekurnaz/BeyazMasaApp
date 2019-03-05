@@ -9,8 +9,9 @@ namespace BeyazMasa.Business.Abstract
 {
     public interface IBirimlerService
     {
+        List<Birimler> GetAllBirimler();
         List<Birimler> GetBirimByBelediye(int belediyeId); // Belediyeye Ait Olan Birimleri Listeleme.
-        void Add(Birimler birim, int belediyeId);
+        void Add(Birimler birim);
         void Delete(Birimler birim);
         void Update(Birimler birim);
         Birimler GetById(int id);

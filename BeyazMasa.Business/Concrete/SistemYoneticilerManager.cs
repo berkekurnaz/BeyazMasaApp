@@ -45,6 +45,14 @@ namespace BeyazMasa.Business.Concrete
             return _sistemYoneticilerDal.Get(x => x.Id == id);
         }
 
+        /* Sistem Yoneticisinin Sisteme Giris Yapmasi */
+        public SistemYoneticiler Login(SistemYoneticiler sistemYonetici)
+        {
+            var result = new SistemYoneticiler();
+            result = _sistemYoneticilerDal.Get(x => x.KullaniciAdi == sistemYonetici.KullaniciAdi && x.Sifre == sistemYonetici.Sifre);
+            return result;
+        }
+
         /* Bir Sistem Yoneticisi Guncelleme */
         public void Update(SistemYoneticiler sistemYonetici)
         {

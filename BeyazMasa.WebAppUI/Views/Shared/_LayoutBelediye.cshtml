@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="" name="description" />
+    <meta content="webthemez" name="author" />
+    <title>Belediye</title>
+    <!-- Bootstrap Styles-->
+    <link href="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/Lightweight-Chart/cssCharts.css">
+
+    <!-- TABLE STYLES-->
+    <link href="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Belediye/Index/"><strong><i class="fa fa-building"></i> Yönetim</strong></a>
+
+                <div id="sideNav" href="">
+                    <i class="fa fa-bars icon"></i>
+                </div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Anasayfa</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out fa-fw"></i> Çıkış Yap</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="/Belediye/Index/"><i class="fa fa-home"></i> Anasayfa</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> Hızlı İşlemler<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/BelediyeBirimler/Ekle/">Birim Ekle</a>
+                            </li>
+                            <li>
+                                <a href="/BelediyeBirimYoneticiler/Ekle/">Birim Yöneticisi Ekle</a>
+                            </li>
+                            <li>
+                                <a href="/BelediyeYoneticiler/Ekle/">Yönetici Ekle</a>
+                            </li>
+                            <li>
+                                <a href="/BelediyeVatandaslar/Ekle/">Vatandaş Ekle</a>
+                            </li>
+                            <li>
+                                <a href="/Belediye/TeknikDestek/">Teknik Destek</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/BelediyeBirimler/Index/"><i class="fa fa-desktop"></i> Birimler</a>
+                    </li>
+
+                    <li>
+                        <a href="/BelediyeBirimYoneticiler/Index/"><i class="fa fa-qrcode"></i> Birim Yöneticiler</a>
+                    </li>
+
+                    <li>
+                        <a href="/BelediyeBasvurular/Index/"><i class="fa fa-table"></i> Başvurular</a>
+                    </li>
+                    <li>
+                        <a href="/Belediye/Duyurular/"><i class="fa fa-bell"></i> Duyurular</a>
+                    </li>
+                    <li>
+                        <a href="/BelediyeVatandaslar/Index/"><i class="fa fa-user"></i> Vatandaşlar</a>
+                    </li>
+                    <li>
+                        <a href="/BelediyeYoneticiler/Index/"><i class="fa fa-edit"></i> Yöneticiler</a>
+                    </li>
+                    <li>
+                        <a href="/Belediye/Cikis/"><i class="fa fa-sign-out"></i> Çıkış Yap</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+
+        <div id="page-wrapper">
+            @RenderBody()
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+   
+    <!-- jQuery Js -->
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/jquery-1.10.2.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/jquery.metisMenu.js"></script>
+
+    <!-- DATA TABLE SCRIPTS -->
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/dataTables/dataTables.bootstrap.js"></script>
+
+
+
+    <!-- Custom Js -->
+    <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/custom-scripts.js"></script>
+
+
+</body>
+
+</html>
