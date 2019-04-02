@@ -51,6 +51,13 @@ namespace BeyazMasa.Business.Concrete
             return _birimYoneticilerDal.Get(x => x.Id == id);
         }
 
+        public BirimYoneticiler Login(BirimYoneticiler birimYonetici)
+        {
+            var result = new BirimYoneticiler();
+            result = _birimYoneticilerDal.Get(x => x.KullaniciAdi == birimYonetici.KullaniciAdi && x.Sifre == birimYonetici.Sifre);
+            return result;
+        }
+
         /* Bir Birim Yoneticisi Guncelleme */
         public void Update(BirimYoneticiler birimYonetici)
         {

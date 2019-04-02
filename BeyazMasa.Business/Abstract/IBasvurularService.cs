@@ -10,6 +10,7 @@ namespace BeyazMasa.Business.Abstract
     public interface IBasvurularService
     {
         List<Basvurular> GetBasvuruByBelediye(int belediyeId); // Belediyeye Ait Olan Başvuruları Listeleme.
+        List<Basvurular> GetBasvuruByBirim(int birimId); // Birime Ait Olan Başvuruları Listeleme.
         void Add(Basvurular basvuru);
         void UpdateDurum(int basvuruId, string durum);
         void Delete(Basvurular basvuru);

@@ -15,5 +15,6 @@ namespace BeyazMasa.Business.Abstract
         void Delete(BirimYoneticiler birimYonetici);
         void Update(BirimYoneticiler birimYonetici);
         BirimYoneticiler GetById(int id);
+        BirimYoneticiler Login(BirimYoneticiler birimYonetici);
     }
 }

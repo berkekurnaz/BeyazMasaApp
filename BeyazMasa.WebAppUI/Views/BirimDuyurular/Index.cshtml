@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BeyazMasa.Entity.Concrete.Duyurular>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutBirim.cshtml";
+}
+
+<div class="header">
+    <h1 class="page-header">
+        Anasayfa <small>Hoşgeldiniz Deneme Belediyesi</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#">Beyaz Masa</a></li>
+        <li><a href="#">Duyurular</a></li>
+        <li class="active">Liste</li>
+    </ol>
+
+</div>
+
+<div id="page-inner" class="text-center">
+
+
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Duyurular Listesi
+                </div>
+                <div class="panel-body">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-8 col-sm-8">
+                            @if (item.Baslik.Length > 80)
+                            {
+                                <p>@item.Baslik.Substring(0, 80)...</p>
+                            }
+                            else
+                            {
+                                <p>@item.Baslik</p>
+                            }
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <a href="/BirimDuyurular/Incele/@item.Id" class="btn btn-info">İncele</a>
+                        </div>
+                    }
+                </div>
+                <div class="panel-footer">
+                    Son Güncelleme Tarihi : @DateTime.Now
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

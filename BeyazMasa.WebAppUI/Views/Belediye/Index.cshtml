@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<BeyazMasa.Entity.Concrete.Duyurular>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
@@ -24,7 +24,7 @@
                 <div class="panel panel-primary">
                     <div class="number">
                         <h3>
-                            <h3>0</h3>
+                            <h3>@ViewBag.BasvuruSayisi</h3>
                             <small>Başvuru Sayısı</small>
                         </h3>
                     </div>
@@ -41,7 +41,7 @@
                 <div class="panel panel-primary">
                     <div class="number">
                         <h3>
-                            <h3>0</h3>
+                            <h3>@ViewBag.VatandasSayisi</h3>
                             <small>Vatandaş Sayısı</small>
                         </h3>
                     </div>
@@ -58,7 +58,7 @@
                 <div class="panel panel-primary">
                     <div class="number">
                         <h3>
-                            <h3>0</h3>
+                            <h3>@ViewBag.BirimSayisi</h3>
                             <small>BİRİM Sayısı</small>
                         </h3>
                     </div>
@@ -75,7 +75,7 @@
                 <div class="panel panel-primary">
                     <div class="number">
                         <h3>
-                            <h3>0</h3>
+                            <h3>@ViewBag.DuyuruSayisi</h3>
                             <small>Duyuru Sayısı</small>
                         </h3>
                     </div>
@@ -98,9 +98,12 @@
                     Duyurular
                 </div>
                 <div class="panel-body">
-                    <p>
-                        Örnek Duyuru-1 <a href="/Belediye/Duyurular/">Tıklayın</a>
-                    </p>
+                    @foreach (var item in Model)
+                    {
+                        <p>
+                            @item.Baslik <a href="/Belediye/DuyuruDetay/@item.Id">Tıklayın</a>
+                        </p>
+                    }
                 </div>
                 <div class="panel-footer">
                     Detaylı Listelemek İçin <a href="/Belediye/Duyurular">Tıklayın</a>

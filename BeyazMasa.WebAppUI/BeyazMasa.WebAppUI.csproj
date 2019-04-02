@@ -154,7 +154,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -168,6 +170,9 @@
     <Compile Include="Controllers\Site\BelediyeController.cs" />
     <Compile Include="Controllers\Site\BelediyeVatandaslarController.cs" />
     <Compile Include="Controllers\Site\BelediyeYoneticilerController.cs" />
+    <Compile Include="Controllers\Site\BirimController.cs" />
+    <Compile Include="Controllers\Site\BirimDuyurularController.cs" />
+    <Compile Include="Controllers\Site\BirimYoneticilerController.cs" />
     <Compile Include="Controllers\Site\SistemBelediyelerController.cs" />
     <Compile Include="Controllers\Site\SistemBirimlerController.cs" />
     <Compile Include="Controllers\Site\SistemController.cs" />
@@ -177,10 +182,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CrudModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -244,6 +252,17 @@
     <Content Include="Views\BelediyeBasvurular\Incele.cshtml" />
     <Content Include="Views\BelediyeBasvurular\Guncelle.cshtml" />
     <Content Include="Views\BelediyeBasvurular\Sil.cshtml" />
+    <Content Include="Views\Belediye\TeknikDestek.cshtml" />
+    <Content Include="Views\Shared\_LayoutBirim.cshtml" />
+    <Content Include="Views\Birim\Index.cshtml" />
+    <Content Include="Views\Birim\Giris.cshtml" />
+    <Content Include="Views\BirimYoneticiler\Index.cshtml" />
+    <Content Include="Views\BirimYoneticiler\Incele.cshtml" />
+    <Content Include="Views\BirimYoneticiler\Guncelle.cshtml" />
+    <Content Include="Views\BirimYoneticiler\Ekle.cshtml" />
+    <Content Include="Views\BirimYoneticiler\Sil.cshtml" />
+    <Content Include="Views\BirimDuyurular\Index.cshtml" />
+    <Content Include="Views\BirimDuyurular\Incele.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -253,7 +272,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeyazMasa.Business\BeyazMasa.Business.csproj">

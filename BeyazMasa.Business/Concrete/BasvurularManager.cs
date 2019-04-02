@@ -39,6 +39,12 @@ namespace BeyazMasa.Business.Concrete
             return _basvurularDal.GetAll(x => x.BelediyeId == belediyeId);
         }
 
+        /* Birime Ait Butun Basvurulari Listeleme */
+        public List<Basvurular> GetBasvuruByBirim(int birimId)
+        {
+            return _basvurularDal.GetAll(x => x.BirimId == birimId);
+        }
+
         /* Id Degerine Göre Basvuru Bulma */
         public Basvurular GetById(int id)
         {

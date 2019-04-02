@@ -1,4 +1,7 @@
-﻿@model IEnumerable<BeyazMasa.Entity.Concrete.Basvurular>
+﻿@using System.Data
+@using System.Data.SqlClient
+@model System.Data.DataTable
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutBelediye.cshtml";
@@ -6,9 +9,9 @@
 
 <script src="https://webthemez.com/demo/brilliant-free-bootstrap-admin-template/assets/js/jquery-1.10.2.js"></script>
 <script>
-        $(document).ready(function () {
-            $('#dataTables-example').dataTable();
-        });
+    $(document).ready(function () {
+        $('#dataTables-example').dataTable();
+    });
 </script>
 
 <div class="header">
@@ -43,26 +46,26 @@
                                 </tr>
                             </thead>
                             <tbody class="text-center">
-                                @foreach (var item in Model)
+                                @foreach (DataRow dr in Model.Rows)
                                 {
-                                <tr class="odd gradeX">
-                                    <td>@item.VatandasId</td>
-                                    <td>@item.BirimId</td>
-                                    <td>@item.Tarih</td>
-                                    @if (item.Baslik.Length > 20)
-                                    {
-                                        <td>@item.Baslik.Substring(0,20)</td>
-                                    }
-                                    else
-                                    {
-                                        <td>@item.Baslik</td>
-                                    }
-                                    <td>
-                                        <a href="/BelediyeBasvurular/Incele/@item.Id" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i> İncele</a>
-                                        <a href="/BelediyeBasvurular/Guncelle/@item.Id" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i> Güncelle</a>
-                                        <a href="/BelediyeBasvurular/Sil/@item.Id" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
-                                    </td>
-                                </tr>
+                                    <tr class="odd gradeX">
+                                        <td>@dr["VatandasIsim"].ToString()  @dr["VatandasSoyad"].ToString()</td>
+                                        <td>@dr["BirimAd"].ToString()</td>
+                                        <td>@dr["Tarih"].ToString()</td>
+                                        @if (dr["Baslik"].ToString().Length > 10)
+                                        {
+                                        <td>@dr["Baslik"].ToString().Substring(0,10)</td>
+                                        }
+                                        else
+                                        {
+                                        <td>@dr["Baslik"].ToString()</td>
+                                        }
+                                        <td>
+                                            <a href="/BelediyeBasvurular/Incele/@dr["Id"].ToString()" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i> İncele</a>
+                                            <a href="/BelediyeBasvurular/Guncelle/@dr["Id"].ToString()" class="btn btn-success"><i class="fa fa-pencil" aria-hidden="true"></i> Güncelle</a>
+                                            <a href="/BelediyeBasvurular/Sil/@dr["Id"].ToString()" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                                        </td>
+                                    </tr>
                                 }
                             </tbody>
                         </table>

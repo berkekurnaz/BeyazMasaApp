@@ -2,8 +2,10 @@
 using BeyazMasa.Business.Concrete;
 using BeyazMasa.DataAccess.Concrete.EntityFramework;
 using BeyazMasa.Entity.Concrete;
+using BeyazMasa.WebAppUI.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,8 +20,10 @@ namespace BeyazMasa.WebAppUI.Controllers.Site
 
         public ActionResult Index()
         {
-            int belediyeId = Convert.ToInt32(Session["BelediyeId"]);  
-            return View(_basvurularService.GetBasvuruByBelediye(belediyeId));
+            int belediyeId = Convert.ToInt32(Session["BelediyeId"]);
+            CrudModel model = new CrudModel();
+            DataTable dt = model.GetAllBasvurularByBelediye(belediyeId);
+            return View(dt);
         }
 
         public ActionResult Incele(int id)

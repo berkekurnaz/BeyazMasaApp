@@ -39,6 +39,19 @@ namespace BeyazMasa.Business.Concrete
             return _duyurularDal.GetAll();
         }
 
+        /* Son 5 Duyuruyu Listeleme */
+        public List<Duyurular> GetLastFiveDuyurular()
+        {
+            if (_duyurularDal.GetAll().Count > 5)
+            {
+                return _duyurularDal.GetAll().OrderByDescending(x => x.Id).Take(5).ToList();
+            }
+            else
+            {
+                return _duyurularDal.GetAll();
+            }
+        }
+
         /* Id Degerine Göre Duyuru Bulma */
         public Duyurular GetById(int id)
         {
